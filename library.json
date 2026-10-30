@@ -828,6 +828,33 @@
         "label": "openai.com",
         "url": "https://openai.com/news/"
       }
+    },
+    {
+      "id": "cover-ep46-v6",
+      "group": "cover",
+      "title": "第46期 120平四房两厅9.28万套餐 V6 真人（DS-01 巨数压场）",
+      "episode": "第46期",
+      "tags": [
+        "DS-01",
+        "巨数压场",
+        "白图匠尺",
+        "主播实拍",
+        "大字关键词"
+      ],
+      "comment": "巨数9.28万红色压场＋白图匠尺网格纸底＋尺寸线连接价格与标题，人物下置",
+      "image": "images/cover-ep46-v6.svg",
+      "thumb": "thumbs/cover-ep46-v6.svg",
+      "width": 900,
+      "height": 1600,
+      "orig": [
+        1080,
+        1920
+      ],
+      "date": "2026-10-30",
+      "source": {
+        "label": "第46期 V6 定稿",
+        "url": null
+      }
     }
   ]
 }
