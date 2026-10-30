@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>博艺视觉参考库</title>
+<meta name="description" content="博艺装修 平面设计·内容部 视觉参考库：封面、片尾落版、实景空间、包装元素、同行案例">
+<style>
+:root{--red:#B8011E;--red-soft:#f6e3e6;--bg:#f6f4f1;--card:#fff;--text:#1d1d1f;--muted:#6e6e73;--line:#e4e0da;--chip:#ece8e2;--shadow:0 1px 2px rgba(0,0,0,.06),0 6px 18px rgba(0,0,0,.06)}
+html[data-theme=dark]{--bg:#141414;--card:#1f1f21;--text:#f2f2f2;--muted:#a1a1a6;--line:#2e2e31;--chip:#2a2a2d;--red-soft:#3a1219;--shadow:0 1px 2px rgba(0,0,0,.4)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC","Source Han Sans SC",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.bar{max-width:1440px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand .logo{height:30px;padding:4px 8px;background:#fff;border-radius:6px}
+.brand h1{margin:0;font-size:19px;letter-spacing:.04em}
+.brand small{display:block;color:var(--muted);font-size:12px;font-weight:400;letter-spacing:0}
+.search{flex:1;min-width:200px;max-width:440px;margin-left:auto;position:relative}
+.search input{width:100%;height:38px;border-radius:19px;border:1px solid var(--line);background:var(--card);color:var(--text);padding:0 16px 0 38px;font-size:14px;outline:none}
+.search input:focus{border-color:var(--red)}
+.search svg{position:absolute;left:13px;top:11px;width:16px;height:16px;color:var(--muted)}
+.btn{height:38px;padding:0 14px;border-radius:19px;border:1px solid var(--line);background:var(--card);color:var(--text);font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.btn.on{background:var(--red);border-color:var(--red);color:#fff}
+.chips{max-width:1440px;margin:0 auto;padding:0 24px 12px;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;height:30px;padding:0 12px;border-radius:15px;border:none;background:var(--chip);color:var(--text);font-size:13px;cursor:pointer}
+.chip.on{background:var(--red);color:#fff}
+main{max-width:1440px;margin:0 auto;padding:8px 0 64px}
+.intro{padding:16px 24px 4px;color:var(--muted);font-size:13px;line-height:1.7}
+.intro b{color:var(--red)}
+section{margin-top:22px}
+.shead{display:flex;align-items:baseline;gap:10px;padding:0 24px 10px}
+.shead h2{margin:0;font-size:18px;position:relative;padding-left:12px}
+.shead h2:before{content:"";position:absolute;left:0;top:4px;bottom:4px;width:4px;border-radius:2px;background:var(--red)}
+.shead .cnt{color:var(--muted);font-size:13px}
+.shead .desc{color:var(--muted);font-size:12px;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.shead .more{margin-left:auto;font-size:13px;color:var(--red);background:none;border:none;cursor:pointer;white-space:nowrap}
+.row{display:flex;gap:14px;overflow-x:auto;padding:4px 24px 14px;scroll-snap-type:x proximity;scroll-padding-inline:24px;scrollbar-width:thin}
+.row.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));overflow:visible}
+.card{flex:none;width:200px;scroll-snap-align:start;background:var(--card);border-radius:12px;overflow:hidden;box-shadow:var(--shadow);cursor:pointer;position:relative;transition:transform .15s}
+.card:hover{transform:translateY(-2px)}
+.row.grid .card{width:auto}
+.thumb{aspect-ratio:9/16;background:var(--chip);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.thumb.contain{background:#fff}
+.thumb.contain img{object-fit:contain;padding:14px}
+.meta{padding:9px 11px 11px}
+.meta .t{font-size:13.5px;font-weight:600;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.meta .s{font-size:12px;color:var(--muted);margin-top:4px}
+.fav{position:absolute;top:8px;right:8px;width:32px;height:32px;border-radius:16px;border:none;background:rgba(0,0,0,.45);color:#fff;font-size:16px;cursor:pointer;line-height:32px;padding:0}
+.card:not(.link-card) .fav{top:auto;bottom:10px;background:var(--chip);color:var(--muted)}
+.fav.on,.card:not(.link-card) .fav.on{background:var(--red);color:#fff}
+.meta{padding-right:46px!important}
+.link-card{width:280px;padding:16px;display:flex;flex-direction:column;gap:8px;min-height:200px}
+.row.grid .link-card{width:auto}
+.link-card .dom{font-size:12px;color:var(--red);font-weight:600}
+.link-card .t{font-size:15px;font-weight:600;line-height:1.4}
+.link-card .c{font-size:13px;color:var(--muted);line-height:1.6;flex:1}
+.link-card .go{font-size:13px;color:var(--red);text-decoration:none}
+.link-card .fav{background:var(--chip);color:var(--muted)}
+.link-card .fav.on{background:var(--red);color:#fff}
+.empty{padding:40px 24px;text-align:center;color:var(--muted)}
+footer{max-width:1440px;margin:0 auto;padding:24px;color:var(--muted);font-size:12px;border-top:1px solid var(--line)}
+/* viewer */
+.viewer{position:fixed;inset:0;z-index:50;background:rgba(10,10,10,.92);display:none}
+.viewer.open{display:flex}
+.v-img{flex:1;display:flex;align-items:center;justify-content:center;padding:24px;min-width:0;position:relative}
+.v-img img{max-width:100%;max-height:100%;object-fit:contain;border-radius:6px;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+.v-img img.light{background:#fff;padding:20px}
+.v-side{width:380px;flex:none;background:var(--card);color:var(--text);padding:28px 24px;overflow-y:auto;display:flex;flex-direction:column;gap:14px}
+.v-side .grp{font-size:12px;color:var(--red);font-weight:600;letter-spacing:.05em}
+.v-side h3{margin:0;font-size:20px;line-height:1.4}
+.v-side .cm{font-size:14.5px;line-height:1.8;background:var(--red-soft);border-left:3px solid var(--red);padding:12px 14px;border-radius:4px}
+.v-side dl{margin:0;display:grid;grid-template-columns:56px 1fr;gap:8px 10px;font-size:13px}
+.v-side dt{color:var(--muted)}
+.v-side dd{margin:0;word-break:break-all}
+.v-side .tags{display:flex;flex-wrap:wrap;gap:6px}
+.v-side .tags span{font-size:12px;background:var(--chip);padding:3px 9px;border-radius:10px}
+.v-act{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+.v-close,.v-nav{position:absolute;border:none;background:rgba(255,255,255,.14);color:#fff;cursor:pointer;border-radius:50%}
+.v-close{top:16px;left:16px;width:40px;height:40px;font-size:22px}
+.v-nav{top:50%;width:44px;height:44px;font-size:22px;margin-top:-22px}
+.v-prev{left:16px}.v-next{right:16px}
+@media (max-width:760px){
+ .bar{padding:10px 14px;gap:10px}
+ .brand{flex:1;min-width:0}.brand .logo{height:26px}.brand h1{font-size:16px;white-space:nowrap}.brand small{display:none}
+ .bar .btn .lbl{display:none}
+ .search{order:3;flex-basis:100%;max-width:none;margin:0}
+ .bar .btn{padding:0 11px;height:34px;font-size:13px}
+ .chips{padding:0 14px 10px}
+ .intro{padding:12px 14px 0}
+ .shead{padding:0 14px 8px}.shead .desc{display:none}
+ .row{padding:4px 14px 12px;gap:10px;scroll-padding-inline:14px}
+ .card{width:42vw}
+ .row.grid{grid-template-columns:repeat(2,1fr)}
+ .link-card{width:72vw}
+ .viewer.open{flex-direction:column;overflow-y:auto}
+ .v-img{flex:none;height:62vh;padding:56px 12px 12px}
+ .v-side{width:auto;flex:none;padding:20px 16px 40px}
+ .v-nav{top:auto;bottom:12px;margin:0}
+}
+</style>
+</head>
+<body>
+<header>
+ <div class="bar">
+  <a class="brand" href="./"><img class="logo" src="thumbs/end-logo-red.webp" alt="博艺建筑"><h1>博艺视觉参考库<small>平面设计·内容部 · 做图前先看这里</small></h1></a>
+  <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" placeholder="搜索标题、点评、期数、标签…" autocomplete="off"></label>
+  <button class="btn" id="favBtn" title="只看收藏">♡ <span class="lbl">收藏</span> <span id="favN">0</span></button>
+  <button class="btn" id="themeBtn" title="切换深浅色">◐ <span class="lbl" id="themeT">深色</span></button>
+ </div>
+ <div class="chips" id="chips"></div>
+</header>
+<main>
+ <div class="intro" id="intro"></div>
+ <div id="groups"></div>
+</main>
+<footer id="foot"></footer>
+<div class="viewer" id="viewer" role="dialog" aria-modal="true">
+ <div class="v-img"><button class="v-close" id="vClose" aria-label="关闭">×</button><button class="v-nav v-prev" id="vPrev" aria-label="上一张">‹</button><img id="vImg" alt=""><button class="v-nav v-next" id="vNext" aria-label="下一张">›</button></div>
+ <aside class="v-side" id="vSide"></aside>
+</div>
+<script>
+(function(){
+const $=s=>document.querySelector(s);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const FAV_KEY='boyi-ref-fav',THEME_KEY='boyi-ref-theme';
+let LIB,favs=new Set(JSON.parse(localStorage.getItem(FAV_KEY)||'[]')),state={q:'',tag:'全部',favOnly:false,expanded:{}},visible=[],cur=-1;
+// theme
+function setTheme(t){document.documentElement.dataset.theme=t;$('#themeT').textContent=t==='dark'?'浅色':'深色';localStorage.setItem(THEME_KEY,t)}
+setTheme(localStorage.getItem(THEME_KEY)||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));
+$('#themeBtn').onclick=()=>setTheme(document.documentElement.dataset.theme==='dark'?'light':'dark');
+function saveFav(){localStorage.setItem(FAV_KEY,JSON.stringify([...favs]));$('#favN').textContent=favs.size}
+function toggleFav(id){favs.has(id)?favs.delete(id):favs.add(id);saveFav();render()}
+function match(it){
+ if(state.favOnly&&!favs.has(it.id))return false;
+ if(state.tag!=='全部'&&!(it.tags||[]).includes(state.tag))return false;
+ if(state.q){const h=[it.title,it.comment,it.episode,(it.tags||[]).join(' '),it.source&&it.source.label,grpName(it.group)].join(' ').toLowerCase();
+  return state.q.toLowerCase().split(/\s+/).filter(Boolean).every(w=>h.includes(w))}
+ return true}
+function grpName(id){const g=LIB.groups.find(g=>g.id===id);return g?g.name:id}
+function renderChips(){
+ const cnt={};LIB.items.forEach(i=>(i.tags||[]).forEach(t=>cnt[t]=(cnt[t]||0)+1));
+ const tags=['全部',...Object.keys(cnt).sort((a,b)=>cnt[b]-cnt[a])];
+ $('#chips').innerHTML=tags.map(t=>`<button class="chip${t===state.tag?' on':''}" data-t="${esc(t)}">${esc(t)}${t==='全部'?'':' '+cnt[t]}</button>`).join('');
+ $('#chips').querySelectorAll('.chip').forEach(b=>b.onclick=()=>{state.tag=b.dataset.t;renderChips();render()})}
+function card(it){
+ const f=favs.has(it.id);
+ if(it.link)return `<div class="card link-card" data-id="${it.id}"><button class="fav${f?' on':''}" data-fav="${it.id}" aria-label="收藏">${f?'♥':'♡'}</button><div class="dom">${esc(it.source.label)}</div><div class="t">${esc(it.title)}</div><div class="c">${esc(it.comment)}</div><a class="go" href="${esc(it.link)}" target="_blank" rel="noopener noreferrer">打开出处 ↗</a></div>`;
+ return `<div class="card" data-id="${it.id}"><div class="thumb${it.group==='end'?' contain':''}"><img loading="lazy" src="${esc(it.thumb)}" alt="${esc(it.title)}"></div><button class="fav${f?' on':''}" data-fav="${it.id}" aria-label="收藏">${f?'♥':'♡'}</button><div class="meta"><div class="t">${esc(it.title)}</div><div class="s">${esc(it.episode||'')} · ${esc(it.date||'')}</div></div></div>`}
+function render(){
+ visible=[];let html='';
+ LIB.groups.forEach(g=>{
+  const its=LIB.items.filter(i=>i.group===g.id&&match(i));if(!its.length)return;
+  visible.push(...its);const ex=state.expanded[g.id];
+  html+=`<section><div class="shead"><h2>${esc(g.name)}</h2><span class="cnt">${its.length}</span><span class="desc">${esc(g.desc||'')}</span><button class="more" data-g="${g.id}">${ex?'收起':'查看全部'}</button></div><div class="row${ex?' grid':''}">${its.map(card).join('')}</div></section>`});
+ $('#groups').innerHTML=html||'<div class="empty">没有符合条件的参考，换个关键词或标签试试。</div>';
+ $('#groups').querySelectorAll('.more').forEach(b=>b.onclick=()=>{state.expanded[b.dataset.g]=!state.expanded[b.dataset.g];render()});
+ $('#groups').querySelectorAll('[data-fav]').forEach(b=>b.onclick=e=>{e.stopPropagation();toggleFav(b.dataset.fav)});
+ $('#groups').querySelectorAll('.card').forEach(c=>c.onclick=e=>{if(e.target.closest('a'))return;open(c.dataset.id)})}
+function open(id){
+ const it=LIB.items.find(i=>i.id===id);if(!it)return;cur=visible.findIndex(i=>i.id===id);
+ const img=$('#vImg');
+ if(it.link){img.style.display='none'}else{img.style.display='';img.src=it.image;img.alt=it.title;img.className=it.group==='end'?'light':''}
+ const src=it.source||{};const f=favs.has(it.id);
+ const size=it.width?`${it.orig?it.orig[0]+'×'+it.orig[1]+'（原图）':''}${it.orig?'，':''}${it.width}×${it.height}（站内）`:'—';
+ $('#vSide').innerHTML=`<div class="grp">${esc(grpName(it.group))}</div><h3>${esc(it.title)}</h3><div class="cm">${esc(it.comment)}</div>
+ <dl><dt>期数</dt><dd>${esc(it.episode||'—')}</dd><dt>日期</dt><dd>${esc(it.date||'—')}</dd><dt>尺寸</dt><dd>${esc(size)}</dd><dt>出处</dt><dd>${src.url?`<a href="${esc(src.url)}" target="_blank" rel="noopener noreferrer">${esc(src.label)} ↗</a>`:esc(src.label||'—')}</dd></dl>
+ <div class="tags">${(it.tags||[]).map(t=>`<span>${esc(t)}</span>`).join('')}</div>
+ <div class="v-act"><button class="btn${f?' on':''}" id="vFav">${f?'♥ 已收藏':'♡ 收藏'}</button>${it.link?`<a class="btn" href="${esc(it.link)}" target="_blank" rel="noopener noreferrer">打开出处 ↗</a>`:`<a class="btn" href="${esc(it.image)}" target="_blank">原图 ↗</a>`}<button class="btn" id="vCopy">复制点评</button></div>`;
+ $('#vFav').onclick=()=>{toggleFav(it.id);open(it.id)};
+ $('#vCopy').onclick=()=>{navigator.clipboard&&navigator.clipboard.writeText(it.title+'：'+it.comment);$('#vCopy').textContent='已复制'};
+ $('#viewer').classList.add('open');document.body.style.overflow='hidden';
+ if(location.hash!=='#'+id)history.replaceState(null,'','#'+id)}
+function close(){$('#viewer').classList.remove('open');document.body.style.overflow='';history.replaceState(null,'',location.pathname+location.search)}
+function step(d){if(!visible.length)return;cur=(cur+d+visible.length)%visible.length;open(visible[cur].id)}
+$('#vClose').onclick=close;$('#vPrev').onclick=()=>step(-1);$('#vNext').onclick=()=>step(1);
+$('#viewer').onclick=e=>{if(e.target.classList.contains('v-img'))close()};
+addEventListener('keydown',e=>{if(!$('#viewer').classList.contains('open')){if(e.key==='/'&&document.activeElement!==$('#q')){e.preventDefault();$('#q').focus()}return}
+ if(e.key==='Escape')close();if(e.key==='ArrowLeft')step(-1);if(e.key==='ArrowRight')step(1)});
+let tx=null;$('#vImg').addEventListener('touchstart',e=>tx=e.touches[0].clientX,{passive:true});
+$('#vImg').addEventListener('touchend',e=>{if(tx==null)return;const dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>50)step(dx<0?1:-1);tx=null});
+let t;$('#q').oninput=e=>{clearTimeout(t);t=setTimeout(()=>{state.q=e.target.value.trim();render()},120)};
+$('#favBtn').onclick=()=>{state.favOnly=!state.favOnly;$('#favBtn').classList.toggle('on',state.favOnly);render()};
+fetch('library.json',{cache:'no-cache'}).then(r=>r.json()).then(lib=>{LIB=lib;
+ const n=lib.items.length,img=lib.items.filter(i=>!i.link).length;
+ $('#intro').innerHTML=`共 <b>${n}</b> 条参考（博艺自有图片 ${img} 张，同行案例 ${n-img} 条只放链接）。点卡片看大图和点评；点评格式统一为「<b>元素＋手法＋连接方式</b>」。片尾落版只用官方红色透明 logo 原样。`;
+ $('#foot').textContent=`${lib.site.name} ${lib.site.version} · 更新于 ${lib.site.updated} · ${lib.site.owner} · 收藏只保存在本机浏览器`;
+ saveFav();renderChips();render();if(location.hash.length>1)open(decodeURIComponent(location.hash.slice(1)))})
+ .catch(()=>{$('#groups').innerHTML='<div class="empty">library.json 加载失败，请用本地服务器或线上网址打开。</div>'});
+})();
+</script>
+</body>
+</html>
