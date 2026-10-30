@@ -1,0 +1,833 @@
+{
+  "site": {
+    "name": "博艺视觉参考库",
+    "version": "V1",
+    "updated": "2026-10-30",
+    "owner": "平面设计·内容部"
+  },
+  "groups": [
+    {
+      "id": "cover",
+      "name": "封面",
+      "desc": "博艺各期抖音封面代表作（第0帧即封面）"
+    },
+    {
+      "id": "end",
+      "name": "片尾落版",
+      "desc": "只用官方红色透明 logo 原样，不裁切、不加电话地址"
+    },
+    {
+      "id": "site",
+      "name": "实景空间",
+      "desc": "博艺自己的工地实拍，可做底图和 B-roll"
+    },
+    {
+      "id": "pkg",
+      "name": "包装元素",
+      "desc": "字幕句型、封面模板等可复用包装"
+    },
+    {
+      "id": "peer",
+      "name": "同行案例",
+      "desc": "外部参考只放链接和点评，不托管原图（版权归原作者）"
+    }
+  ],
+  "items": [
+    {
+      "id": "cover-ep46",
+      "group": "cover",
+      "title": "四房两厅套餐包了什么",
+      "episode": "第46期",
+      "date": "2026-10-30",
+      "tags": [
+        "纸底排版",
+        "数字钩子",
+        "主播实拍"
+      ],
+      "comment": "米白方格纸底＋红色大号「9.28万」和「120㎡」两组数字，右下主播站在等轴测户型图旁，用「数字→户型→人」的斜向视线把价格和空间连成一条线。",
+      "image": "images/cover-ep46.svg",
+      "thumb": "thumbs/cover-ep46.svg",
+      "width": 900,
+      "height": 1600,
+      "orig": [
+        1080,
+        1920
+      ],
+      "source": {
+        "label": "Drive 第46期_120平四房两厅9.28万套餐",
+        "url": "https://drive.google.com/drive/folders/1bi7gmS44YyjJGibMVQsNqnK4RE-zY0YO"
+      }
+    },
+    {
+      "id": "cover-ep45",
+      "group": "cover",
+      "title": "燃气定电？热水器拣错冲凉冇热水",
+      "episode": "第45期",
+      "date": "2026-10-30",
+      "tags": [
+        "主播实拍",
+        "大字关键词"
+      ],
+      "comment": "浅色室内虚化背景＋怀抱文件夹的主播占据上半部，黄色「燃气定电？」加白色结果句放在下半，上图下文的两段式让人物和问题各占一块，红色 logo 压在右上角收口。",
+      "image": "images/cover-ep45.svg",
+      "thumb": "thumbs/cover-ep45.svg",
+      "width": 900,
+      "height": 1600,
+      "orig": [
+        1080,
+        1920
+      ],
+      "source": {
+        "label": "Drive 第45期_封面_V1_1080x1920.png",
+        "url": "https://drive.google.com/file/d/1-h6eBHi-_UMlY3qpkzntzBVDi2k4X1xC/view"
+      }
+    },
+    {
+      "id": "cover-ep44",
+      "group": "cover",
+      "title": "马桶装不上？先量对坑距",
+      "episode": "第44期",
+      "date": "2026-10-30",
+      "tags": [
+        "纸底排版",
+        "数字钩子",
+        "标注线"
+      ],
+      "comment": "方格纸底＋红色超大「300/400 mm」，下方剖切墙体模型和主播拉卷尺量坑距，红色尺寸箭头把「数字」和「动作」直接扣在一起，信息一眼看完。",
+      "image": "images/cover-ep44.svg",
+      "thumb": "thumbs/cover-ep44.svg",
+      "width": 900,
+      "height": 1600,
+      "orig": [
+        1080,
+        1920
+      ],
+      "source": {
+        "label": "Drive 第44期_马桶坑距怎么量_封面D_V3",
+        "url": "https://drive.google.com/file/d/1rgRzmKPrBqbHRUhvvjYgYfQfjJXmmmvC/view"
+      }
+    },
+    {
+      "id": "cover-ep42",
+      "group": "cover",
+      "title": "平开、推拉、断桥先分清两种分类",
+      "episode": "第42期",
+      "date": "2026-10-29",
+      "tags": [
+        "纸底排版",
+        "线稿图解",
+        "主播实拍"
+      ],
+      "comment": "浅灰纸底＋黑色标题里只把「两种分类」标红，左下门窗开启方式线稿、右侧主播做手势，用细线框把图解分区，画面干净像一页说明书。",
+      "image": "images/cover-ep42.svg",
+      "thumb": "thumbs/cover-ep42.svg",
+      "width": 900,
+      "height": 1600,
+      "orig": [
+        1080,
+        1920
+      ],
+      "source": {
+        "label": "box：/workspace/publish/ep42/",
+        "url": null
+      }
+    },
+    {
+      "id": "cover-ep18",
+      "group": "cover",
+      "title": "水电进场前，先定8件家电",
+      "episode": "第18期",
+      "date": "2026-10-26",
+      "tags": [
+        "主播实拍",
+        "大字关键词"
+      ],
+      "comment": "真实室内背景＋居中主播，白字铺垫句加蓝色超大「8件家电」，上下两段文字夹住人物，视线从标题落到人再落到底部品牌条。",
+      "image": "images/cover-ep18.svg",
+      "thumb": "thumbs/cover-ep18.svg",
+      "width": 900,
+      "height": 1600,
+      "orig": [
+        1080,
+        1920
+      ],
+      "source": {
+        "label": "box：reno_series/第18期_水电前定8件家电/交付/v2",
+        "url": null
+      }
+    },
+    {
+      "id": "cover-ep15",
+      "group": "cover",
+      "title": "毛坯房收楼签字前先验5样",
+      "episode": "第15期",
+      "date": "2026-10-26",
+      "tags": [
+        "主播实拍",
+        "大字关键词"
+      ],
+      "comment": "毛坯房实景＋站姿主播，黄色描边大字「先验5样」压在胸口位置，白字前置条件做引子，人物和关键词上下叠放形成一个视觉中心。",
+      "image": "images/cover-ep15.svg",
+      "thumb": "thumbs/cover-ep15.svg",
+      "width": 900,
+      "height": 1600,
+      "orig": [
+        1080,
+        1920
+      ],
+      "source": {
+        "label": "box：reno_series/第15期_收楼验5样/交付/v2",
+        "url": null
+      }
+    },
+    {
+      "id": "cover-ep14",
+      "group": "cover",
+      "title": "报价单漏了这5项",
+      "episode": "第14期",
+      "date": "2026-10-26",
+      "tags": [
+        "主播实拍",
+        "数字钩子"
+      ],
+      "comment": "暖色实景＋侧身主播，黄色巨型「5项」配白字「后期一定加钱」，小字列出漏项名称，用数字大小反差把焦虑点放到最大。",
+      "image": "images/cover-ep14.svg",
+      "thumb": "thumbs/cover-ep14.svg",
+      "width": 900,
+      "height": 1600,
+      "orig": [
+        1080,
+        1920
+      ],
+      "source": {
+        "label": "box：reno_series/第14期_报价单漏项/交付/v7",
+        "url": null
+      }
+    },
+    {
+      "id": "cover-ep13",
+      "group": "cover",
+      "title": "8万全包是大坑？",
+      "episode": "第13期",
+      "date": "2026-10-28",
+      "tags": [
+        "纸底排版",
+        "警示条",
+        "数字钩子"
+      ],
+      "comment": "上半浅蓝纸底放黑色巨型「8万」，下半黄黑警示斜条托住「大坑」，主播从右侧切入，靠警示条把「价格」和「风险」分成上下两层。",
+      "image": "images/cover-ep13.svg",
+      "thumb": "thumbs/cover-ep13.svg",
+      "width": 900,
+      "height": 1600,
+      "orig": [
+        1080,
+        1920
+      ],
+      "source": {
+        "label": "box：reno_series/第13期_低价全包/交付/v1",
+        "url": null
+      }
+    },
+    {
+      "id": "cover-ep11",
+      "group": "cover",
+      "title": "高州100平装修钱分四块",
+      "episode": "第11期",
+      "date": "2026-10-28",
+      "tags": [
+        "主播实拍",
+        "大字关键词"
+      ],
+      "comment": "实景书房＋坐姿主播，白字地域和面积在上、黄色「四块」紧跟其下，本地地名直接写进标题，靠「地名＋面积＋数字」拉近同城观众。",
+      "image": "images/cover-ep11.svg",
+      "thumb": "thumbs/cover-ep11.svg",
+      "width": 900,
+      "height": 1600,
+      "orig": [
+        1080,
+        1920
+      ],
+      "source": {
+        "label": "box：reno_series/第11期_装修钱分4块/交付/v1",
+        "url": null
+      }
+    },
+    {
+      "id": "cover-ep10",
+      "group": "cover",
+      "title": "开工前先去物业报备",
+      "episode": "第10期",
+      "date": "2026-10-28",
+      "tags": [
+        "色块撞色",
+        "大字关键词"
+      ],
+      "comment": "黑字巨型「报备」＋蓝色方块框住主播，下方黑底黄字再重复一次「报备」，同一个词上下呼应，蓝黑撞色让缩略图里也很醒目。",
+      "image": "images/cover-ep10.svg",
+      "thumb": "thumbs/cover-ep10.svg",
+      "width": 900,
+      "height": 1600,
+      "orig": [
+        1080,
+        1920
+      ],
+      "source": {
+        "label": "box：reno_series/第10期_物业报备/交付/v4",
+        "url": null
+      }
+    },
+    {
+      "id": "cover-ep34",
+      "group": "cover",
+      "title": "封阳台前先算账：通风",
+      "episode": "第34期",
+      "date": "2026-10-25",
+      "tags": [
+        "纸底排版",
+        "大字关键词",
+        "主播实拍"
+      ],
+      "comment": "白纸底＋黑色宋体「通风」做主标题，蓝色「先算账」压在主播左侧，右下黄色小方块和页码做落点，留白多、像杂志内页。",
+      "image": "images/cover-ep34.svg",
+      "thumb": "thumbs/cover-ep34.svg",
+      "width": 900,
+      "height": 1600,
+      "orig": [
+        1080,
+        1920
+      ],
+      "source": {
+        "label": "box：reno_series/第34期_封阳台通风/交付/v2",
+        "url": null
+      }
+    },
+    {
+      "id": "cover-ep30",
+      "group": "cover",
+      "title": "空调冷凝水开工前定",
+      "episode": "第30期",
+      "date": "2026-10-25",
+      "tags": [
+        "暗底",
+        "抠像白边",
+        "大字关键词"
+      ],
+      "comment": "深色网格底＋白边抠像主播，白色宋体「冷凝水」顶天，黄色「开工前定」配黄色角标线框，暗底让白边人物像贴纸一样跳出来。",
+      "image": "images/cover-ep30.svg",
+      "thumb": "thumbs/cover-ep30.svg",
+      "width": 900,
+      "height": 1600,
+      "orig": [
+        1080,
+        1920
+      ],
+      "source": {
+        "label": "box：reno_series/第30期_空调冷凝水/交付/v2",
+        "url": null
+      }
+    },
+    {
+      "id": "cover-ep22",
+      "group": "cover",
+      "title": "户门过道尺寸：3个数",
+      "episode": "第22期",
+      "date": "2026-10-25",
+      "tags": [
+        "纸底排版",
+        "大字关键词"
+      ],
+      "comment": "与第34期同一套白纸杂志版式：黑色「尺寸」＋蓝色「3个数」，主播居右、小字「沙发抬不进门？」做痛点，系列化版式让多期封面放在主页上排得整齐。",
+      "image": "images/cover-ep22.svg",
+      "thumb": "thumbs/cover-ep22.svg",
+      "width": 900,
+      "height": 1600,
+      "orig": [
+        1080,
+        1920
+      ],
+      "source": {
+        "label": "box：reno_series/第22期_户门过道尺寸/交付/v7",
+        "url": null
+      }
+    },
+    {
+      "id": "cover-cab01",
+      "group": "cover",
+      "title": "定制柜点样计面积：投影展开",
+      "episode": "专题",
+      "date": "2026-10-26",
+      "tags": [
+        "主播实拍",
+        "大字关键词"
+      ],
+      "comment": "柜体样板间实景＋倚柜主播，黄色大字「投影展开」放在胸口位置，人物和柜子同框，直接用场景说明主题，不需要额外图解。",
+      "image": "images/cover-cab01.svg",
+      "thumb": "thumbs/cover-cab01.svg",
+      "width": 900,
+      "height": 1600,
+      "orig": [
+        1080,
+        1920
+      ],
+      "source": {
+        "label": "box：claude_code_video_templates/episodes/定制柜投影展开面积/deliver",
+        "url": null
+      }
+    },
+    {
+      "id": "cover-gd01",
+      "group": "cover",
+      "title": "博艺工地：师傅在干活",
+      "episode": "日常视频",
+      "date": "2026-10-27",
+      "tags": [
+        "工地实拍",
+        "手绘描边"
+      ],
+      "comment": "工地实拍照片＋黄色手绘描边框和手写「Work」，白色粗体标题叠在墙面上，手绘线把真实工地变成有温度的日常记录。",
+      "image": "images/cover-gd01.svg",
+      "thumb": "thumbs/cover-gd01.svg",
+      "width": 900,
+      "height": 1600,
+      "orig": [
+        1080,
+        1920
+      ],
+      "source": {
+        "label": "box：reno_series/手绘描边风_照片卡点/out",
+        "url": null
+      }
+    },
+    {
+      "id": "end-logo-red",
+      "group": "end",
+      "title": "官方红色透明 logo（横版）",
+      "episode": "通用",
+      "date": "2026-10-30",
+      "tags": [
+        "品牌",
+        "落版"
+      ],
+      "comment": "官方原版：房子图标＋「博艺建筑」＋「以匠心设计，筑理想工程」，透明底原样使用，不裁切、不改色、不加电话地址；片尾落版统一用它收口。",
+      "image": "images/end-logo-red.svg",
+      "thumb": "thumbs/end-logo-red.svg",
+      "width": 1600,
+      "height": 459,
+      "orig": [
+        2776,
+        796
+      ],
+      "source": {
+        "label": "Drive logo_H_red.png",
+        "url": "https://drive.google.com/file/d/1yAuJEZcc64N1XTqhYH9vLWdX5vEBPxBp/view"
+      }
+    },
+    {
+      "id": "site-6163",
+      "group": "site",
+      "title": "窗边水电管线走向",
+      "episode": "工地实拍",
+      "date": "2026-10-27",
+      "tags": [
+        "工地实拍",
+        "水电"
+      ],
+      "comment": "毛坯墙地＋红色电管沿地面成排走向窗边，窗外绿网做背景，管线的引导线让人一眼看懂走向，适合做水电讲解的开场底图。",
+      "image": "images/site-6163.svg",
+      "thumb": "thumbs/site-6163.svg",
+      "width": 675,
+      "height": 1200,
+      "orig": [
+        675,
+        1200
+      ],
+      "source": {
+        "label": "box：/workspace/boyi_heic_new/jpg",
+        "url": null
+      }
+    },
+    {
+      "id": "site-6164",
+      "group": "site",
+      "title": "毛坯卧室全景",
+      "episode": "工地实拍",
+      "date": "2026-10-27",
+      "tags": [
+        "工地实拍",
+        "空间"
+      ],
+      "comment": "方正毛坯房＋单窗自然光，地面散放的管材和板材交代施工阶段，空间干净留白，适合叠大字标题。",
+      "image": "images/site-6164.svg",
+      "thumb": "thumbs/site-6164.svg",
+      "width": 675,
+      "height": 1200,
+      "orig": [
+        675,
+        1200
+      ],
+      "source": {
+        "label": "box：/workspace/boyi_heic_new/jpg",
+        "url": null
+      }
+    },
+    {
+      "id": "site-6165",
+      "group": "site",
+      "title": "卫生间排水管预埋",
+      "episode": "工地实拍",
+      "date": "2026-10-27",
+      "tags": [
+        "工地实拍",
+        "水电"
+      ],
+      "comment": "白色 PVC 排水管＋红色管帽在灰地面上转折，俯拍角度把管路结构看得很清楚，适合配防水、地漏类话题。",
+      "image": "images/site-6165.svg",
+      "thumb": "thumbs/site-6165.svg",
+      "width": 675,
+      "height": 1200,
+      "orig": [
+        675,
+        1200
+      ],
+      "source": {
+        "label": "box：/workspace/boyi_heic_new/jpg",
+        "url": null
+      }
+    },
+    {
+      "id": "site-6167",
+      "group": "site",
+      "title": "墙角立管与红色管帽",
+      "episode": "工地实拍",
+      "date": "2026-10-27",
+      "tags": [
+        "工地实拍",
+        "水电"
+      ],
+      "comment": "竖向白色立管＋红色保护帽贴着窗边墙角，竖构图天然适合 9:16，线条硬朗，可作手绘描边标注的底图。",
+      "image": "images/site-6167.svg",
+      "thumb": "thumbs/site-6167.svg",
+      "width": 675,
+      "height": 1200,
+      "orig": [
+        675,
+        1200
+      ],
+      "source": {
+        "label": "box：/workspace/boyi_heic_new/jpg",
+        "url": null
+      }
+    },
+    {
+      "id": "site-6168",
+      "group": "site",
+      "title": "过道全景与红色横幅",
+      "episode": "工地实拍",
+      "date": "2026-10-27",
+      "tags": [
+        "工地实拍",
+        "空间",
+        "品牌"
+      ],
+      "comment": "横向长过道＋右侧红色施工横幅，透视线把视线带向尽头，红色横幅顺手带出博艺品牌色。",
+      "image": "images/site-6168.svg",
+      "thumb": "thumbs/site-6168.svg",
+      "width": 1200,
+      "height": 675,
+      "orig": [
+        1200,
+        675
+      ],
+      "source": {
+        "label": "box：/workspace/boyi_heic_new/jpg",
+        "url": null
+      }
+    },
+    {
+      "id": "site-6169",
+      "group": "site",
+      "title": "过道地面红蓝管线",
+      "episode": "工地实拍",
+      "date": "2026-10-27",
+      "tags": [
+        "工地实拍",
+        "水电"
+      ],
+      "comment": "一点透视长过道＋地面红蓝两色管并行，消失点在画面中央，非常适合做「顺着管线往前走」的推镜开场。",
+      "image": "images/site-6169.svg",
+      "thumb": "thumbs/site-6169.svg",
+      "width": 675,
+      "height": 1200,
+      "orig": [
+        675,
+        1200
+      ],
+      "source": {
+        "label": "box：/workspace/boyi_heic_new/jpg",
+        "url": null
+      }
+    },
+    {
+      "id": "site-6171",
+      "group": "site",
+      "title": "门洞与红蓝管入户",
+      "episode": "工地实拍",
+      "date": "2026-10-27",
+      "tags": [
+        "工地实拍",
+        "空间"
+      ],
+      "comment": "门洞框中框构图＋红蓝管从门槛穿过，前后两层空间叠在一起，有纵深，适合做转场的「穿门」镜头。",
+      "image": "images/site-6171.svg",
+      "thumb": "thumbs/site-6171.svg",
+      "width": 675,
+      "height": 1200,
+      "orig": [
+        675,
+        1200
+      ],
+      "source": {
+        "label": "box：/workspace/boyi_heic_new/jpg",
+        "url": null
+      }
+    },
+    {
+      "id": "site-6174",
+      "group": "site",
+      "title": "弱电箱强电箱标识",
+      "episode": "工地实拍",
+      "date": "2026-10-27",
+      "tags": [
+        "工地实拍",
+        "水电",
+        "品牌"
+      ],
+      "comment": "灰墙面上博艺红色「弱电箱／强电箱」标识牌＋预留管线，品牌物料和施工细节同框，是证明「规范施工」的好素材。",
+      "image": "images/site-6174.svg",
+      "thumb": "thumbs/site-6174.svg",
+      "width": 675,
+      "height": 1200,
+      "orig": [
+        675,
+        1200
+      ],
+      "source": {
+        "label": "box：/workspace/boyi_heic_new/jpg",
+        "url": null
+      }
+    },
+    {
+      "id": "pkg-s02",
+      "group": "pkg",
+      "title": "S02 纸底标题封面",
+      "episode": "字幕包",
+      "date": "2026-10-25",
+      "tags": [
+        "纸底排版",
+        "字幕样式"
+      ],
+      "comment": "浅蓝网格纸底＋蓝色房子图标，黑色「防潮」配蓝色「四样嘢」两行大字，无人物纯排版，适合系列合集或不出镜的知识类。",
+      "image": "images/pkg-s02.svg",
+      "thumb": "thumbs/pkg-s02.svg",
+      "width": 900,
+      "height": 1600,
+      "orig": [
+        1080,
+        1920
+      ],
+      "source": {
+        "label": "box：subtitle_pack_gpt_v2/samples",
+        "url": null
+      }
+    },
+    {
+      "id": "pkg-e02",
+      "group": "pkg",
+      "title": "E02 引导句＋关键词",
+      "episode": "字幕包",
+      "date": "2026-10-25",
+      "tags": [
+        "字幕样式",
+        "大字关键词"
+      ],
+      "comment": "白色黑体引导句＋黄色宋体超大关键词，胸口位置、无底框只用柔投影，一句最多一个关键词，口播里最常用的句型。",
+      "image": "images/pkg-e02.svg",
+      "thumb": "thumbs/pkg-e02.svg",
+      "width": 900,
+      "height": 1600,
+      "orig": [
+        1080,
+        1920
+      ],
+      "source": {
+        "label": "box：subtitle_pack_gpt_v2/samples",
+        "url": null
+      }
+    },
+    {
+      "id": "pkg-e04",
+      "group": "pkg",
+      "title": "E04 错对纠正",
+      "episode": "字幕包",
+      "date": "2026-10-25",
+      "tags": [
+        "字幕样式",
+        "大字关键词"
+      ],
+      "comment": "白字说明场景＋黄色大字给结论，靠上下两行的大小反差表达「先说问题再给答案」，适合纠正误区的句子。",
+      "image": "images/pkg-e04.svg",
+      "thumb": "thumbs/pkg-e04.svg",
+      "width": 900,
+      "height": 1600,
+      "orig": [
+        1080,
+        1920
+      ],
+      "source": {
+        "label": "box：subtitle_pack_gpt_v2/samples",
+        "url": null
+      }
+    },
+    {
+      "id": "pkg-e06",
+      "group": "pkg",
+      "title": "E06 警示词",
+      "episode": "字幕包",
+      "date": "2026-10-25",
+      "tags": [
+        "字幕样式",
+        "大字关键词"
+      ],
+      "comment": "地名白字＋黄色警示大字「墙身出水」，配主播正在开口讲的表情，表情和警示词一起放大情绪，用在风险提醒句。",
+      "image": "images/pkg-e06.svg",
+      "thumb": "thumbs/pkg-e06.svg",
+      "width": 900,
+      "height": 1600,
+      "orig": [
+        1080,
+        1920
+      ],
+      "source": {
+        "label": "box：subtitle_pack_gpt_v2/samples",
+        "url": null
+      }
+    },
+    {
+      "id": "pkg-tpl1",
+      "group": "pkg",
+      "title": "封面模板 TPL1 上标题",
+      "episode": "封面模板",
+      "date": "2026-10-26",
+      "tags": [
+        "封面模板",
+        "大字关键词"
+      ],
+      "comment": "标题顶在上三分之一、白字问句＋黄色大字答案，主播坐姿在下，是最稳的通用封面骨架，换文字就能出新一期。",
+      "image": "images/pkg-tpl1.svg",
+      "thumb": "thumbs/pkg-tpl1.svg",
+      "width": 900,
+      "height": 1600,
+      "orig": [
+        1080,
+        1920
+      ],
+      "source": {
+        "label": "box：boyi_brand/cover_templates_v1",
+        "url": null
+      }
+    },
+    {
+      "id": "pkg-tpl4",
+      "group": "pkg",
+      "title": "封面模板 TPL4 角框标题",
+      "episode": "封面模板",
+      "date": "2026-10-26",
+      "tags": [
+        "封面模板",
+        "大字关键词"
+      ],
+      "comment": "黄色直角括号框住标题＋主播居中，括号像取景框一样把视线圈进文字区，比纯文字多一点设计感又不抢人物。",
+      "image": "images/pkg-tpl4.svg",
+      "thumb": "thumbs/pkg-tpl4.svg",
+      "width": 900,
+      "height": 1600,
+      "orig": [
+        1080,
+        1920
+      ],
+      "source": {
+        "label": "box：boyi_brand/cover_templates_v1",
+        "url": null
+      }
+    },
+    {
+      "id": "ref-azivor",
+      "group": "peer",
+      "title": "AI 大厂视觉参考图库（azivor）",
+      "episode": "外部参考",
+      "date": "2026-10-29",
+      "tags": [
+        "结构参考",
+        "点评写法"
+      ],
+      "comment": "本库的结构样板：按来源分行横滑、大图查看器、搜索筛选收藏；每张图一句「元素＋手法＋连接方式」的点评写法值得照抄。图片版权归原作者，只看不用。",
+      "link": "https://azivor.github.io/reference",
+      "source": {
+        "label": "azivor.github.io",
+        "url": "https://azivor.github.io/reference"
+      }
+    },
+    {
+      "id": "ref-anthropic",
+      "group": "peer",
+      "title": "Anthropic 官方文章封面（纸张拼贴）",
+      "episode": "外部参考",
+      "date": "2026-10-29",
+      "tags": [
+        "纸张拼贴",
+        "暖色"
+      ],
+      "comment": "米白纸张颗粒＋手撕拼贴＋实物与几何图并置，适合借鉴到「设计稿→实景」对比封面的质感层，只能局部借鉴手法。",
+      "link": "https://www.anthropic.com/news",
+      "source": {
+        "label": "www.anthropic.com",
+        "url": "https://www.anthropic.com/news"
+      }
+    },
+    {
+      "id": "ref-perplexity",
+      "group": "peer",
+      "title": "Perplexity 品牌海报（暖色大标题）",
+      "episode": "外部参考",
+      "date": "2026-10-29",
+      "tags": [
+        "暖色",
+        "大字标题"
+      ],
+      "comment": "暖色大面积底＋超大标题字，排版极简，可参考做博艺品牌形象图；风格偏国际化，不要整套照搬到抖音口播封面。",
+      "link": "https://www.perplexity.ai/hub",
+      "source": {
+        "label": "www.perplexity.ai",
+        "url": "https://www.perplexity.ai/hub"
+      }
+    },
+    {
+      "id": "ref-openai",
+      "group": "peer",
+      "title": "OpenAI 发布主视觉（冷暖撞色）",
+      "episode": "外部参考",
+      "date": "2026-10-29",
+      "tags": [
+        "冷暖撞色",
+        "渐变"
+      ],
+      "comment": "柔和渐变＋冷暖撞色＋大量留白，适合借鉴到片头转场的色彩过渡；版权归原公司，只做手法参考。",
+      "link": "https://openai.com/news/",
+      "source": {
+        "label": "openai.com",
+        "url": "https://openai.com/news/"
+      }
+    }
+  ]
+}
